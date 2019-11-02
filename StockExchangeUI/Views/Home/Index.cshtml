@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">StockExchange stock exchange</h1>
+    <div>
+        <a class="block" asp-action="GetOrderBook" asp-controller="Home">Order book</a>
+        <a class="block" asp-action="GetAllTransactions" asp-controller="Home">Transactions</a>
+        <a class="block" asp-action="BuySellStock" asp-controller="Home">Buy And Sell</a>
+        <a class="block" asp-action="OrderStatus" asp-controller="Home">Orders status per Customer</a>
+    </div>
+</div>
+
+<style>
+    .block {
+        display: block;
+        width: 100%;
+        border: none;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .block:hover {
+        background-color: #ddd;
+        color: black;
+    }
+</style>

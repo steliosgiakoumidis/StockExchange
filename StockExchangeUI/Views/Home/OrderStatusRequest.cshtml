@@ -1,0 +1,16 @@
+﻿@model StockExchange.Models.Order
+<h1>Buy And Sell Microsoft Stocks</h1>
+
+<div class="row">
+    <div class="col-md-4">
+
+        <form action="OrderStatus" method="POST">
+            <input type="text" name="customerId" />
+            <input type="submit" value="Get statuses" class="btn btn-default" />
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to main menu</a>
+</div>
